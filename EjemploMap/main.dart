@@ -21,6 +21,7 @@ void main() {
   });
 
   // Actualizar el precio de la Amoxicilina
+  // Utilizamos el método update() para actualizar el valor
   inventarioMedicinas.update('Amoxicilina', (datos) {
     datos[1] = 1.50; // Nuevo precio
     return datos;
@@ -47,6 +48,7 @@ void main() {
   });
 
   // Eliminar una medicina (Ibuprofeno) del inventario
+  // Utilizamos el método remove() para eliminar un elemento
   inventarioMedicinas.remove('Ibuprofeno');
   print('\nDespués de eliminar Ibuprofeno:');
   inventarioMedicinas.forEach((medicina, datos) {
